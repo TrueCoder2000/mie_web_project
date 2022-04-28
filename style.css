@@ -1,0 +1,1892 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    scroll-behavior: smooth;
+    background-color: rgb(27, 25, 25);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+/*.................................................................HEADER DE LA PAGINA...................................................................*/
+
+header{
+    display: block;
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    z-index: 20;
+}
+
+
+.box-logo-icones{
+    width: 100%;
+    height: 50%;
+    background-color: #FFCD01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box-logo img{
+    width: 45%;
+    height: 90%;
+}
+
+.box-icones{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-icones>div{
+    width: 5%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-icones> div a{
+    text-decoration: none;
+}
+
+.box-icones>div i{
+    font-size: 40px;
+    padding: 10px;
+}
+
+.box-icones>div:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+
+.box-icones .phone-icon{
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.box-icones .phone-icon{
+    color: white;
+}
+
+.box-icones .facebook-icon{
+    border-radius: 50%;
+    background-color: #06b6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.box-icones .facebook-icon{
+    color: white;
+}
+
+.box-icones .instagram-icon{
+    border-radius: 50%;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.box-icones .instagram-icon{
+    color: white;
+}
+
+.box-icones .whatsapp-icon{
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.box-icones .whatsapp-icon{
+    color: white;
+}
+
+.box-icones .email-icon{
+    border-radius: 50%;
+    background-color:	#FF1493;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+}
+
+.box-icones .email-icon{
+    color: white;
+}
+
+.box-menu{
+    /*background-color: #06b6ff;*/
+    /*background-color: rgba(0, 0, 0, 0.377);*/
+    background-color: rgba(0, 0, 0, 0.719);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+
+}
+
+.menu li{
+    list-style: none;
+    overflow: hidden;
+}
+
+/*.menu li:hover{
+    background-color: brown;
+    border-radius: 3px;
+}*/
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.menu li a::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: brown;
+    position: absolute;
+    left: -270px;
+    top: 25px;
+    z-index: 1;
+}
+
+.menu li a:hover::after{
+    color: #FFCD01;
+    left: 0px;
+    transition: 0.2s;
+}
+
+
+
+.menu-responsive{
+    width: 10%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-responsive i{
+    color: white;
+    font-size: 50px;
+}
+
+/*..............................................................FOOTER DE LA PAGINA...............................................................*/
+
+
+footer{
+    width: 100%;
+    height: 500px;
+    background-color:#06b6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1800px;
+}
+
+
+.box-logo-icones-footer{
+    width: 25%;
+    height: 80%;
+    display: block;
+}
+
+.logo-footer{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer img{
+    width: 80%;
+    position: relative;
+}
+
+.icones-footer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.icones-footer>div{
+    width: 13%;
+    height: 30%;
+    cursor: pointer;
+}
+
+.icones-footer>div i{
+    font-size: 40px;
+}
+
+.icones-footer>div:hover{
+    transform: scale(1.3);
+    transition: 0.9s;
+}
+
+.footer-phone{
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-phone i{
+    color: white;
+}
+
+.footer-facebook{
+    border-radius: 50%;
+    /*background-color: #06b6ff;*/
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-facebook i{
+    color: white;
+}
+
+.footer-instagram{
+    border-radius: 50%;
+    background-color: #FFCD01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-instagram i{
+    color: white;
+}
+
+.footer-whatsapp{
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-whatsapp i{
+    color: white;
+}
+
+.footer-email{
+    border-radius: 50%;
+    background-color:	#FF1493;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-email i{
+    color: white;
+}
+
+
+.box-servicios-footer{
+    width: 25%;
+    height: 80%;
+    display: block;
+}
+
+
+.texto-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texto-footer h1{
+    color: white;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.servicio-footer-list{
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 20px;
+}
+
+.servicio-footer-list>div{
+    height: 35px;
+}
+
+.servicio-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.servicio-1 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.servicio-1 a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s;
+}
+
+
+.servicio-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.servicio-2 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.servicio-2 a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s;
+}
+
+
+.servicio-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.servicio-3 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.servicio-3 a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s;
+}
+
+
+.servicio-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.servicio-4 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.servicio-4 a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s;
+}
+
+
+.servicio-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.servicio-5 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.servicio-5 a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s;
+}
+
+
+.box-contactos-footer{
+    width: 25%;
+    height: 80%;
+    display: block;
+}
+
+
+.texto-footer-contratacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-footer-contratacion h1{
+    color: white;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contratacion-footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+
+.phone-escritorio{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-escritorio img{
+    width: 50%;
+    position: relative;
+}
+
+.text-escritorio{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+
+.text-escritorio h4{
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+
+.text-escritorio h6{
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+.atencion-footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+
+
+.phone-atencion{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-atencion img{
+    width: 30%;
+    position: relative;
+}
+
+.text-atencion-cliente{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    top: 10px;
+    display: block;
+}
+
+.text-atencion-cliente h4{
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+
+.text-atencion-cliente h6{
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+
+.ubicacion-footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+
+.icon-maps{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-maps i{
+    font-size: 80px;
+    color: brown;
+}
+
+.ubicacion{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ubicacion h5{
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    font-weight: normal;
+}
+
+/*............................................................CHATBOX..........................................................................................*/
+
+.div-chatbox{
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    top: 500px;
+    right: 50px;
+    opacity: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+
+
+.box-chat{
+    width: 80%;
+    height: 60%;
+    border-radius: 20px;
+    opacity: 0;
+    position: relative;
+    top: 90px;
+    right: 170px;
+    z-index: 100;
+    
+}
+
+
+.box-chat img{
+    width: 100%;
+    height: 60%;
+    opacity: 0.3;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+
+.head-chatbox{
+    width: 100%;
+    height: 22%;
+    position: relative;
+    top: -385px;
+    background-color: brown;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+}
+
+
+.head-chatbox img{
+    width: 140px;
+    height: 80px;
+    padding: 10px;
+    position: relative;
+    left: 5px;
+    top: 10px;
+}
+
+
+.icon-image-chatbox{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.icon-image-chatbox img{
+    opacity: 1;
+    width: 22%;
+}
+
+
+.icon-image-chatbox h3{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+
+.icon-image-chatbox-text{
+    width: 100%;
+    height: 5%;
+    position: relative;
+    top: -410px;
+}
+
+
+.icon-image-chatbox-text h6{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+    padding-left: 20px;
+    display: none;
+}
+
+
+
+.box-message-chatbox{
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    position: relative;
+    top: -415px;
+    display: flex;
+}
+
+
+.box-message-chatbox img{
+    opacity: 1;
+    width: 17%;
+    height: 60px;
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+
+
+.box-message-chatbox h6{
+    font-family: sans-serif;
+    font-weight: normal;
+    position: relative;
+    top: 70px;
+    left: 0px;
+    font-size: 14px;
+    background-color: lightgray;
+    height: 70px;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+.box-writter-chatbox{
+    width: 100%;
+    height: 40px;
+    background-color: brown;
+    position: relative;
+    top: -420px;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.box-writter-chatbox textarea{
+    width: 85%;
+    height: 100%;
+    resize: none;
+    outline: none;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-top: 2px lightgray solid;
+    border-bottom: none;
+    background-color: brown;
+    color: white;
+}
+
+
+.btn-send-chatbox{
+    width: 15%;
+   
+    background-color: #06b6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn-send-chatbox a{
+    text-decoration: none;
+}
+
+
+.btn-send-chatbox i{
+    color: white;
+    font-size: 25px;
+}
+
+
+
+.icon-action-comment-close{
+    position: fixed;
+    top:815px;
+    right: 160px;
+    z-index: 10;
+}
+
+
+.icon-comment-chatbox{
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+    border: 2px white solid;
+    box-shadow: 0px 0px 3px white;
+    cursor: pointer;
+}
+
+
+.icon-comment-chatbox i{
+    color: black;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.icon-close-chatbox{
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: 70px;
+    border: 2px white solid;
+    box-shadow: 0px 0px 3px white;
+    cursor: pointer;
+}
+
+
+.icon-close-chatbox i{
+    color:black;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+/*--------------------------------------------------------------------DIV POPBOT--------------------------------------------------------------------*/
+
+
+.div-pop-mensage{
+    width: 5%;
+    height: 200px;
+    top:-690px;
+    left: 1790px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    position: relative;
+}
+
+
+.box-pop-mensages{
+    width: 4%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 270px;
+    z-index: 10;
+
+}
+
+.pop-whatsapp{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 0;
+    border: 2px white solid;
+    box-shadow: 0px 0px 3px white;
+}
+
+
+.pop-whatsapp i{
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.pop-email{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border-radius: 50%;
+    opacity: 0;
+    position: relative;
+    top: 20px;
+    border: 2px white solid;
+    box-shadow: 0px 0px 3px white;
+}
+
+
+.pop-email i{
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.pop-phone{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF1493;
+    border-radius: 50%;
+    opacity: 0;
+    position: relative;
+    top: 40px;
+    border: 2px white solid;
+    box-shadow: 0px 0px 3px white;
+
+}
+
+
+.pop-phone i{
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.pop-headphones{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    border-radius: 50%;
+    z-index: 3000;
+    position: relative;
+    top: 80px;
+    opacity: 1;
+    overflow: hidden;
+    border: 2px white solid;
+    box-shadow: 0px 0px 3px white;
+}
+
+
+.pop-headphones img{
+    width: 120px;
+    cursor: pointer;
+    color: black;
+    z-index: 1000;
+    position: relative;
+    
+}
+
+
+.pop-close{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: 0;
+    border: 2px white solid;
+    box-shadow: 0px 0px 3px white;
+}
+
+
+.pop-close i{
+    font-size: 40px;
+    cursor: pointer;
+    color: black;
+}
+
+
+.action-pop-icones{
+    opacity: 1;
+    transition: 1s;
+}
+
+
+.action-pop-icones-close{
+    opacity: 0;
+}
+
+
+.headphone-close{
+    opacity: 0;
+}
+
+
+.headphone-open{
+    opacity: 1;
+}
+
+
+
+.action-open{
+    display: block;
+    position: relative;
+    top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+
+.action-close{
+    opacity: 0;
+}
+
+/*............................................................DIV CLIENTES......................................................................................*/
+
+.box-clientes{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    top: 200px;
+    z-index: 0;
+}
+
+.box-clientes h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 60%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+
+.grupos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.123);
+    width: 60%;
+    height: 90%;
+    margin: auto;
+    position: relative;
+    top: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+.grupos::after{
+    content: "";
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    position: absolute;
+    left: -1200px;
+    z-index: 1;
+    animation: animacao 2s infinite ease;
+}
+
+@keyframes animacao{
+    100%{
+        left: 0px;
+    }
+}
+
+.grupos>div{
+    width: 20%;
+    display: block;
+    position: relative;
+    top: 20px;
+    z-index: 20;
+}
+
+.box-clientes>div img{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.grupo1 img{
+    margin: 20px auto;
+    position: relative;
+}
+
+.grupo2 img{
+    position: relative;
+    margin: 17px auto;
+}
+
+
+.grupo3 img{
+    position: relative;
+    margin: 10px auto;
+}
+
+.logo_sandag{
+    position: relative;
+    top: 30px;
+}
+
+
+.grupo4 img{
+    position: relative;
+    margin: 20px auto;
+}
+
+.logo_ecoambiante{
+    position: relative;
+    top: 10px;
+}
+
+
+.grupo1 .logo_cosmopolitan{
+    width: 100%;
+}
+
+.grupo2 .logo_sat{
+    width: 50%;
+}
+
+.grupo2 .logo_imaxess{
+    width: 70%;
+}
+
+.grupo2 .logo_centura{
+    width: 80%;
+}
+
+.grupo2 .logo_newcity_residencial{
+    width: 50%;
+}
+
+.grupo2 .logo_iprk{
+    width: 80%;
+}
+
+.grupo3 .logo_excel{
+    width: 70%;
+}
+
+.grupo3 .logo_bjrr{
+    width: 50%;
+}
+
+.grupo3 .logo_sandag{
+    width: 90%;
+}
+
+.grupo4 .logo_coparmex{
+    width: 70%;
+}
+
+.grupo4 .logo_bioren{
+    width: 100%;
+}
+
+.grupo4 .logo_furmex{
+    width: 90%;
+}
+
+.grupo4 .logo_ecoambiante{
+    width: 65%;
+}
+
+
+/*-----------------------------------------------------------------------BLOCO CERTIFICADOS------------------------------------------------------------------------*/
+
+.certificados{
+    width: 100%;
+    height: 960px;
+    position: relative;
+    top: 1200px;
+}
+
+
+.certificados img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+
+.change{
+    background-color: blue;
+}
+
+
+.texto-certificado{
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+
+.texto-certificado h1{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 60%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.texto-certificado h3{
+    color: orange;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+    position: relative;
+    top: 15px;
+}
+
+
+.todoscertificados{
+    width: 100%;
+    height: 75%;
+    position: relative;
+    top: 200px;
+    transition: 0.7s;
+}
+
+.grupo1{
+    width: 100%;
+    height: 47%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.grupo1>div{
+    width: 15%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px white;
+    /*background-color: #06b6ff;*/
+    background-color: rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+    transition: 2s;
+    position: relative;
+    
+}
+
+
+.grupo1>div::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    /*background-color: #06b6ff;*/
+    background-color: rgba(165, 42, 42, 0.37);
+    position: absolute;
+    z-index: 1;
+    top: -400px;
+    transition: 0.5s;
+}
+
+.grupo1>div:hover::after{
+    top: 0px;
+}
+
+.grupo1>div img{
+    padding: 30px;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.863);
+    opacity: 1;
+    z-index: 2;
+}
+
+
+.grupo2{
+    width: 100%;
+    height: 47%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+
+.grupo2>div{
+    width: 15%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px white;
+    /*background-color: #06b6ff;*/
+    background-color: rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+}
+
+
+.grupo2>div::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    /*background-color: #06b6ff;*/
+    background-color: rgba(165, 42, 42, 0.37);
+    position: absolute;
+    z-index: 1;
+    top: -400px;
+    transition: 0.9s;
+}
+
+.grupo2>div:hover::after{
+    top: 0px;
+}
+
+.grupo2>div img{
+    padding: 30px;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.863);
+    opacity: 1;
+    z-index: 2;
+}
+
+
+
+/*.............................................................SLIDE-SHOW CONTAINER..............................................................................*/
+
+main{
+    top: 180px;
+    z-index: 0;
+}
+
+/*............................................................DIV FUNDO..........................................................................................*/
+.div-fundo{
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+
+video{
+    position: relative;
+    top: 100px;
+    box-shadow: 0px 0px 4px white;
+    background-color: rgba(0, 0, 0, 0.055);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+  }
+  
+  .typing-demo {
+    width: 24ch;
+    animation: typing 2s steps(24), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 5em;
+    color: white;
+    padding-left: 10px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+  .wrapper1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+  }
+  
+  .typing-demo1 {
+    width: 43ch;
+    animation: typing 10s steps(43), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 3em;
+    color: white;
+    padding-left: 10px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink1 {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+
+
+
+/*....................................................................DIV NUESTROS SERVICIOS................................................................................*/
+
+
+.div-contenido-servicios{
+    width: 100%;
+    height: 700px;
+    z-index: 0;
+    position: relative;
+    top: 600px;
+}
+
+
+.div-contenido-servicios .nuestros-servicios h1{
+    color: gray;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.texto-servicios{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-servicios h1{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 60%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.tipos-servicios{
+    width: 85%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.212);
+    padding: 50px;
+    position: relative;
+    top: 170px;
+}
+
+
+.box-servicios{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.internet-dedicado{
+    width: 33%;
+    height: 60%;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+.internet-dedicado img{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.internet-dedicado img:hover{
+    transform: scale(1.3);
+}
+
+
+.internet-dedicado h1{
+    position: relative;
+    top: -370px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+.internet-dedicado p{
+    position: relative;
+    top: -280px;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+.internet-dedicado a{
+    text-decoration: none;
+}
+
+
+
+.internet-dedicado .btn-dedicado{
+    background-color: #FFCD01;
+    position: relative;
+    top: -180px;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px #FFCD01 solid;
+}
+
+
+
+.internet-dedicado .btn-dedicado:hover{
+    background-color: #06b6ff;
+    border: 1px #06b6ff solid;
+    color: #FFCD01;
+}
+
+
+
+.internet-simetrico{
+    width: 33%;
+    height: 60%;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+
+.internet-simetrico img{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.internet-simetrico img:hover{
+    transform: scale(1.3);
+}
+
+
+.internet-simetrico h1{
+    position: relative;
+    top: -370px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+.internet-simetrico p{
+    position: relative;
+    top: -280px;
+    color: white;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: normal;
+}
+
+
+.internet-simetrico a{
+    text-decoration: none;
+}
+
+
+.internet-simetrico .btn-simetrico{
+    background-color: #FFCD01;
+    position: relative;
+    top: -180px;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px #FFCD01 solid;
+}
+
+
+
+.internet-simetrico .btn-simetrico:hover{
+    background-color: #06b6ff;
+    border: 1px #06b6ff solid;
+    color: #FFCD01;
+}
+
+
+
+
+.internet-nube{
+    width: 33%;
+    height: 60%;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+
+.internet-nube img{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.internet-nube img:hover{
+    transform: scale(1.3);
+}
+
+
+.internet-nube h1{
+    position: relative;
+    top: -370px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+.internet-nube p{
+    position: relative;
+    top: -280px;
+    color: white;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: normal;
+}
+
+
+.internet-nube a{
+    text-decoration: none;
+}
+
+
+.internet-nube .btn-nube{
+    background-color: #FFCD01;
+    position: relative;
+    top: -180px;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px #FFCD01 solid;
+}
+
+
+
+.internet-nube .btn-nube:hover{
+    background-color: #06b6ff;
+    border: 1px #06b6ff solid;
+    color: #FFCD01;
+}
+
+
+
+
+
+.internet-consultoria{
+    width: 33%;
+    height: 60%;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+
+.internet-consultoria img{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    opacity: 0.5;
+}
+
+.internet-consultoria img:hover{
+    transform: scale(1.3);
+}
+
+
+.internet-consultoria h1{
+    position: relative;
+    top: -370px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.internet-consultoria p{
+    position: relative;
+    top: -280px;
+    color: white;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: normal;
+}
+
+
+.internet-consultoria a{
+    text-decoration: none;
+}
+
+
+.internet-consultoria .btn-consultoria{
+    background-color: #FFCD01;
+    position: relative;
+    top: -180px;
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px #FFCD01 solid;
+}
+
+
+
+.internet-consultoria .btn-consultoria:hover{
+    background-color: #06b6ff;
+    border: 1px #06b6ff solid;
+    color: #FFCD01;
+}
+
+
+/*-------------------------------------------------------------RESPONSIVIDADE DEL PROYECTO-----------------------------------------------------------------------*/
+
+@media screen and (max-width: 1300px) {
+
+    .box-logo-icones{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-responsive{
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+
+    .box-logo-icones-footer{
+        display: none;
+    }
+
+    .box-servicios-footer{
+        display: none;
+    }
+
+    .box-contactos-footer{
+        width: 100%;
+    }
+
+    .texto-footer-contratacion{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-footer-contratacion h1{
+        text-align: center;
+    }
+  } 
